@@ -118,19 +118,32 @@
 //   )
 // }
 // export default App;
-import React, { useState } from 'react';
-import Fullname from './component/Fullname';
+// import React, { useState } from 'react';
+// import Fullname from './component/Fullname';
 
-function App() {
-  const [firstName] = useState('Vani');
-  const [lastName] = useState('Nelakurthi');
+// function App() {
+//   const [firstName] = useState('Vani');
+//   const [lastName] = useState('Nelakurthi');
 
-  return (
-    <div>
-     < Fullname firstName={firstName} lastName={lastName} />
-    </div>
-  );
+//   return (
+//     <div>
+//      < Fullname firstName={firstName} lastName={lastName} />
+//     </div>
+//   );
+// }
+// export default App;
+import React,{useState,useEffect} from react;
+function app(){
+const [city,setCity]=useState("Ongole");
+if (city==="Ongole"){
+  setCity("hyderabad")
+}else{
+  setCity("Banglore")
 }
-export default App;
-
- 
+return(
+  <div>
+    <h>I Live in {city}</h>
+  </div>
+)
+}
+export default app;

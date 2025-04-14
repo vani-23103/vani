@@ -1,6 +1,5 @@
 import React,{useState,useEffect} from react;
 function app(){
-const StateMgm=()=>{
 const [city,setCity]=useState("Ongole");
 useEffect(()=>{
 if (city==="Ongole"){
@@ -15,5 +14,5 @@ return(
   </div>
 )
 }
-}
+
 export default app;
